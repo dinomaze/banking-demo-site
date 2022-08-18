@@ -1,7 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var app = express();
@@ -15,7 +14,6 @@ console.log('PUBLIC PATH', isProduction ? path.join(__dirname, 'public') : path.
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(isProduction ? path.join(__dirname, 'public') : path.join(__dirname, '..','public')));
 
 // catch 404 and forward to error handler
