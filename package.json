@@ -6,7 +6,7 @@
     "start": "NODE_ENV=production PORT=3001 node ./dist/server.js",
     "dev": "PORT=3000 node ./src/server.js",
     "build": "npm run clean && npm run build:typescript && npm run copy-assets",
-    "build:typescript": "./node_modules/typescript/bin/tsc",
+    "build:typescript": "'./node_modules/typescript/bin/tsc'",
     "copy-assets": "node copyAssets.js",
     "clean": "node clean.js"
   },
