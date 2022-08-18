@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/main.9e2dbcb3.css",
+    "main.js": "/bundle.js",
+    "main.js.map": "/bundle.js.map",
+    "bundle.js.LICENSE.txt": "/bundle.js.LICENSE.txt",
+    "index.html": "/index.html",
+    "main.9e2dbcb3.css.map": "/main.9e2dbcb3.css.map"
+  },
+  "entrypoints": [
+    "main.9e2dbcb3.css",
+    "bundle.js"
+  ]
+}
