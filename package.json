@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "PORT=80 node server"
+    "start": "NODE_ENV=production PORT=80 node ./dist/server.js",
+    "dev": "PORT=3000 node ./src/server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
