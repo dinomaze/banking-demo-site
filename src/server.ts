@@ -70,7 +70,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.use(paginate.middleware(+process.env.PAGINATION_PAGE_SIZE!));
+app.use(paginate.middleware(50));
 
 /* istanbul ignore next */
 if (process.env.NODE_ENV === "test" || process.env.NODE_ENV === "development") {
